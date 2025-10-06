@@ -18,5 +18,5 @@ components:
     registryUrl: https://open-vsx.org/vscode/gallery
   - name: logstash-syntax
     type: chePlugin
-    id: RandomChance/logstash/0.1.0  # Vérifie la version exacte
+    id: RandomChance/logstash/0.1.0
     registryUrl: https://open-vsx.org/vscode/gallery
