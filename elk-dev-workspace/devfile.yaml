@@ -1,0 +1,22 @@
+schemaVersion: 2.0.0
+metadata:
+  name: elk-dev
+  displayName: ELK Development Environment
+  description: Workspace pour développement ELK avec plugins Logstash et YAML
+  tags: ["ELK", "Logstash", "YAML"]
+components:
+  - name: theia
+    type: cheEditor
+    id: eclipse/che-theia/next
+  - name: vscode-yaml
+    type: chePlugin
+    id: redhat/vscode-yaml/1.18.0
+    registryUrl: https://open-vsx.org/vscode/gallery
+  - name: vscode-logstash-editor
+    type: chePlugin
+    id: fbaligand/vscode-logstash-editor/1.4.2
+    registryUrl: https://open-vsx.org/vscode/gallery
+  - name: logstash-syntax
+    type: chePlugin
+    id: RandomChance/logstash/0.1.0  # Vérifie la version exacte
+    registryUrl: https://open-vsx.org/vscode/gallery
