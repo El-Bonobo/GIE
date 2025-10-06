@@ -1,0 +1,13 @@
+[
+  {
+    "name": "elk-dev",
+    "type": "devfile",
+    "displayName": "ELK Development Environment",
+    "description": "Workspace pour développement ELK avec plugins Logstash et YAML",
+    "tags": ["ELK", "Logstash", "YAML"],
+    "icon": "https://www.svgrepo.com/show/303574/elasticsearch-logo.svg",
+    "links": {
+      "self": "/devfiles/elk-dev/devfile.yaml"
+    }
+  }
+]
