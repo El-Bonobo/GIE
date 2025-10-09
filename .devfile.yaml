@@ -1,0 +1,26 @@
+# Devfile pour un workspace ELK prêt à l’emploi
+# Importe ce fichier via GitHub (URL brute) dans Eclipse Che
+schemaVersion: 2.2.0
+metadata:
+  name: ELK
+  description: Workspace ELK avec extensions Logstash et YAML
+components:
+  - name: tools
+    container:
+      image: quay.io/eclipse/che-nodejs-16:nightly
+      memoryLimit: 1Gi
+      mountSources: true
+      env:
+        - name: HOME
+          value: /home/theia
+  - name: theia-editor
+    cheEditor:
+      # Extensions gérées via .vscode/extensions.json
+commands:
+  - id: init-elk
+    exec:
+      component: tools
+      commandLine: echo "Workspace ELK prêt ! Ouvre ou crée un fichier .conf (Logstash) ou .yaml (Elasticsearch/Kibana)."
+      group:
+        kind: run
+        isDefault: true
