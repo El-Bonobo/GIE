@@ -1,6 +1,0 @@
-apiVersion: 1.0.0
-name: elk-dev
-displayName: ELK Development Environment
-description: Workspace pour développement ELK avec plugins Logstash et YAML
-tags: ["ELK", "Logstash", "YAML"]
-icon: "https://www.svgrepo.com/show/303574/elasticsearch-logo.svg"
