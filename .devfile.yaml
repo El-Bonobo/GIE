@@ -11,6 +11,12 @@ components:
       memoryLimit: 1Gi
       mountSources: true
       env:
+        - name: HTTP_PROXY
+          value: "http://172.25.21.145:3128"
+        - name: HTTPS_PROXY
+          value: "http://172.25.21.145:3128"
+        - name: NO_PROXY
+          value: "localhost,127.0.0.1,10.42.0.0/16,172.25.21.145"
         - name: HOME
           value: /home/theia
   - name: theia-editor
